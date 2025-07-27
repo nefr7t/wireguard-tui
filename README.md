@@ -1,64 +1,110 @@
+Конечно! Вот более профессиональная, лаконичная и стильная версия README с чёткой структурой, акцентом на поддержку и качественным оформлением, которая хорошо смотрится и вдохновляет на звёзды ⭐️:
+
+---
+
 # WireGuard TUI
 
-**WireGuard TUI** is a simple terminal-based tool for managing WireGuard VPN on Linux.
-It allows you to easily enable or disable VPN via a user-friendly text menu.
+[![PyPI](https://img.shields.io/pypi/v/wireguard-tui?color=brightgreen&style=flat-square)](https://pypi.org/project/wireguard-tui/)  
+[![Python Version](https://img.shields.io/pypi/pyversions/wireguard-tui?style=flat-square)](https://pypi.org/project/wireguard-tui/)  
+![License](https://img.shields.io/github/license/nefr7t/wireguard-tui?style=flat-square)  
+[![Platform](https://img.shields.io/badge/platform-Linux-blue?style=flat-square)](#)
+
+**WireGuard TUI** — minimalistic, terminal-based WireGuard VPN manager for Linux.  
+Easily toggle your VPN with a clean, colorful, and intuitive text UI.
 
 ---
 
 ## Features
 
-* Turn WireGuard VPN **on** and **off**.
-* Save your `sudo` password and configuration name in `settings.json`.
-* Colorful terminal output (via `colorama`).
-* Works on **Linux only**.
+- ✅ Effortlessly **enable/disable** WireGuard VPN with a single keystroke
+    
+- 🔒 Securely **save `sudo` credentials and config name** in `settings.json`
+    
+- 🎨 Colorful terminal output powered by `colorama`
+    
+- 🐧 Native **Linux-only** tool leveraging `wg-quick`
+    
 
 ---
 
 ## Installation
 
-1. **Clone the repository:**
+### Recommended (via pip)
 
-   ```bash
-   git clone https://github.com/nefr7t/wireguard-tui.git
-   cd wireguard-tui
-   ```
+```bash
+pip install wireguard-tui
+```
 
-2. **Install dependencies:**
+### From source
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the program:**
-
-   ```bash
-   python3 wireguard_tui.py
-   ```
+```bash
+git clone https://github.com/nefr7t/wireguard-tui.git
+cd wireguard-tui
+pip install -r requirements.txt
+python3 wireguard_tui.py
+```
 
 ---
 
-## Configuration
+## Usage & Configuration
 
-* On the first launch, the program will prompt you to enter your **sudo password** and WireGuard configuration name (e.g., `wg0`).
-* This information is saved in a `settings.json` file (created automatically).
+- On first run, enter your **`sudo` password** and WireGuard **configuration name** (e.g., `wg0`).
+    
+- Credentials and settings are saved securely in `settings.json` for seamless future use.
+    
+
+---
+
+## Example Interface
+
+```
+__        ___                                    _ 
+\ \      / (_)_ __ ___  __ _ _   _  __ _ _ __ __| |
+ \ \ /\ / /| | '__/ _ \/ _` | | | |/ _` | '__/ _` |
+  \ V  V / | | | |  __/ (_| | |_| | (_| | | | (_| |
+   \_/\_/  |_|_|  \___|\__, |\__,_|\__,_|_|  \__,_|
+                       |___/                       
+
+    
+Current config: wg0
+
+Choose option:
+[1] Turn on VPN
+[2] Turn off VPN
+[3] Change settings
+[4] Info
+[5] Exit
+
+```
 
 ---
 
 ## Requirements
 
-* **Linux** (uses `wg-quick`).
-* Installed **WireGuard**.
-* Python 3.7 or higher.
+- Linux OS (tested on Fedora, Arch Linux / EndeavourOS)
+    
+- WireGuard installed and configured (`wg-quick`)
+    
+- Python 3.7 or higher
+    
 
 ---
 
-## Contributions & Ideas
+## Contributing & Support
 
-If you have suggestions or want to improve the project, contact me at **[io1n@proton.me](mailto:io1n@proton.me)** or create a Pull Request.
+Contributions, feature requests, and bug reports are welcome!  
+Reach out via email: **[io1n@proton.me](mailto:io1n@proton.me)**  
+or open an issue / pull request on GitHub.
 
 ---
 
 ## License
 
-**MIT License** – free to use, modify, and distribute.
+Distributed under the **MIT License** — free to use, modify, and distribute.
+
+---
+
+⭐ If you find this tool helpful, please consider giving it a star!
+
+---
 
