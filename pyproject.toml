@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wireguard-tui"
+version = "0.1.0"
+description = "A simple TUI for managing WireGuard VPN on Linux."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name = "ion", email = "io1n@proton.me" }
+]
+license = { text = "MIT" }
+keywords = ["wireguard", "vpn", "tui", "linux"]
+dependencies = [
+  "colorama"
+]
+
+[project.urls]
+Homepage = "https://github.com/nefr7t/wireguard-tui"
+Issues = "https://github.com/nefr7t/wireguard-tui/issues"
+
+[project.scripts]
+wireguard-tui = "wireguard_tui.wireguard_tui:main"

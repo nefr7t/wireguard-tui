@@ -139,15 +139,18 @@ def act(opt):
 
 load_settings()
 
-while True:
-    menu()
-    try:
-        opt = int(input("Enter choice: "))
-        act(opt)
-        time.sleep(1)
-        clear_screen()
-    except ValueError:
-        print(Fore.RED + "Invalid choice!\n")
-        time.sleep(1)
-        clear_screen()
+def main():
+    while True:
+        menu()
+        try:
+            opt = int(input("Enter choice: "))
+            act(opt)
+            time.sleep(1)
+            clear_screen()
+        except ValueError:
+            print(Fore.RED + "Invalid choice!\n")
+            time.sleep(1)
+            clear_screen()
 
+if __name__ == "__main__":
+    main()
