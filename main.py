@@ -10,6 +10,13 @@ settings_file = "settings.json"
 password = ""
 config = ""
 
+def first_login():
+    global password, config
+    password = input("Enter new sudo password: ")
+    config = input("Enter new config name: ")
+    save_settings()
+    clear_screen()
+    
 def getinfo():
     print('''
     Works on linux only!
@@ -39,7 +46,7 @@ def load_settings():
             password = data.get("password", "")
             config = data.get("config", "")
     else:
-        change_settings()
+        first_login()
 
 def Up():
     loading(f"Turning on {config}")
