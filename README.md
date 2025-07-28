@@ -1,7 +1,3 @@
-Конечно! Вот более профессиональная, лаконичная и стильная версия README с чёткой структурой, акцентом на поддержку и качественным оформлением, которая хорошо смотрится и вдохновляет на звёзды ⭐️:
-
----
-
 # WireGuard TUI
 
 [![PyPI](https://img.shields.io/pypi/v/wireguard-tui?color=brightgreen&style=flat-square)](https://pypi.org/project/wireguard-tui/)  
